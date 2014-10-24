@@ -28,6 +28,8 @@ The network is one of our most fundamental mediums for interactivity. It makes p
     * [Setting up a web server with Servi](https://github.com/robynitp/networkedmedia/wiki/Web-Servers-with-Servi)
 * [Shawn's notes](http://itp.nyu.edu/~sve204/commlabnetworkedmedia_fall2014/week1.html)
 * [Robyn's notes](https://github.com/robynitp/networkedmedia/wiki/Week-1-Notes)
+    * [Intro to HTML](https://github.com/robynitp/networkedmedia/wiki/Intro-to-HTML)
+    * [Intro to CSS](https://github.com/robynitp/networkedmedia/wiki/Intro-to-CSS)
 * [Assignment 1 (DUE 11/4)](https://github.com/shiffman/itp-networked-media/wiki/Week-1-Homework)
 
 ### Week 2 (10/31): JavaScript basics
