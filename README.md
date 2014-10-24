@@ -65,7 +65,7 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 
 For step-by-step tutorials, we have access to Lynda.com training courses via the NYU Library. If you're new to HTML and/or CSS, I highly recommend watching these.
 
-Request a Lynda.com account at http://nyu.libguides.com/digitalstudio/appointments (It’s in the "Make an Appointment" form, but you don’t actually make an appointment.) On the form, check "Instructional Video Modules". It may take a day or two to get approved.
+[Request a Lynda.com account](http://nyu.libguides.com/digitalstudio/appointments).  (It’s in the "Make an Appointment" form, but you don’t actually make an appointment. On the form, check "Instructional Video Modules". It may take a day or two to get approved.)
 
 ### p5.js
 * [p5.js reference](http://p5js.org/reference)
