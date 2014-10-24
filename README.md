@@ -5,8 +5,9 @@ Fridays 12:10 - 2:40pm, Oct 24 - Dec 12 (7 weeks)
 
 The network is one of our most fundamental mediums for interactivity. It makes possible our interaction with machines, data, and, most importantly, other people. Though the base interaction it supports is simple, a client sends a request to a server, which replies; an incredible variety of systems can be and have been built on top of it. In this course, students will utilize JavaScript as both a client and server side programming language to build creative network systems. Additionally, HTML and CSS will be used to define the structure and look. 
 
-* [Networked media google group](https://groups.google.com/a/itp.nyu.edu/forum/#!forum/networkedmedia)
-* [Office Hours](https://itp.nyu.edu/inwiki/Signup/McCarthy)
+* [main Networked Media google group](https://groups.google.com/a/itp.nyu.edu/forum/#!forum/networkedmedia) - this is for questions.
+* [Friday section google group](https://groups.google.com/a/nyu.edu/forum/#!forum/networked-media-shiffman-2014-group) - this is for announcements related to our section only.
+* [Office Hours](https://itp.nyu.edu/inwiki/Signup/Shiffman)
 * [Resident office hours](https://itp.nyu.edu/inwiki/)
 * Help Sessions: Thursdays from 2:00 - 3:00 in room 15
 * [Assignments page](https://github.com/shiffman/itp-networked-media/wiki)
