@@ -42,7 +42,7 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 * Web services: AJAX and JSON
 * APIs
 
-###Week 5 (11/21): Write your own APIs
+###Week 5 (11/21): Write your own API
 
 * Server-side JavaScript writing basic HTTP servers with Servi and Node.js
 * Data storage
@@ -53,6 +53,7 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 ### Week 6 (12/5): Live web
 
 * WebSockets realtime interaction in the browser
+* Arduino?!
 
 ### Week 7 (12/12): Final Projects
 
