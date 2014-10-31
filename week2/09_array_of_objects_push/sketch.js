@@ -1,7 +1,8 @@
-// Learning Processing
 // Daniel Shiffman
-// http://www.learningprocessing.com
+// Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
 
+// Ported by Lauren McCarthy from Learning Processing
 // Example 9-11 ported to p5.js
 // Resizing an array is JS is as easy as "push()"
 

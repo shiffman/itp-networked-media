@@ -1,17 +1,17 @@
-// Learning Processing
 // Daniel Shiffman
-// http://www.learningprocessing.com
+// Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
 
-// Ported by Lauren McCarthy
-
+// Ported by Lauren McCarthy from Learning Processing
 // Example 8-1: A Car class and a Car object
 
-var myCar; // Declare car object as a globle variable.
+// Declare car object as a global variable.
+var myCar; 
 
 function setup() {
   createCanvas(600,400);
   // Initialize Car object
-  myCar = new Car(); // Initialize car object in setup() by calling constructor.
+  myCar = new Car();
 }
 
 function draw() {
@@ -20,6 +20,8 @@ function draw() {
   myCar.move();
 }
 
+// This is a constructor function and it works
+// kind of like a class even though there are no classes in JS
 function Car() {
   this.c = 175;
   this.xpos = width/2;

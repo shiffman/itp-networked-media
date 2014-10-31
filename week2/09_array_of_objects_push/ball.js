@@ -1,9 +1,12 @@
-// Learning Processing
 // Daniel Shiffman
-// http://www.learningprocessing.com
+// Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
 
+// Ported by Lauren McCarthy from Learning Processing
 // Example 9-11 ported to p5.js
 
+// This is a constructor function and it works
+// kind of like a class even though there are no classes in JS
 function Ball(tempX, tempY, tempW) {
   this.x = tempX;
   this.y = tempY;

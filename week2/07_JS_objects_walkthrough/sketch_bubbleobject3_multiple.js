@@ -1,3 +1,10 @@
+// Daniel Shiffman
+// Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
+
+// Demonstrating some JS object stuff
+
+// Two objects!
 var bubble1;
 var bubble2;
 
@@ -13,7 +20,8 @@ function setup() {
     	this.y = this.y - 1;
     }
   };
-
+  
+  // Make a second one as a copy of the first one!
   bubble2 = Object.create(bubble1);
   bubble2.x = 100;
   bubble2.y = height;
