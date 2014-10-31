@@ -1,3 +1,9 @@
+// Daniel Shiffman
+// Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
+
+// Adapted by Lauren McCarthy
+
 /**
  * Processing > Ex > Basics > Form > Bezier
  *

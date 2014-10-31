@@ -1,8 +1,15 @@
+// Daniel Shiffman
+// Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
 
-var x; // variables
+// Fundamentals of programming in JS (no objects or arrays yet)
+
+// Variables
+var x; 
 var y;
 
-function setup() {  // function declaration
+// A function!
+function setup() {
   createCanvas(600, 400); // instead of size()
   x = width/2;
   y = height/2;
