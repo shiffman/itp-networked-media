@@ -38,7 +38,7 @@ The network is one of our most fundamental mediums for interactivity. It makes p
   * [Download p5.js](http://p5js.org/download/). The download comes with a copy of p5.js, you can also use a statically hosted version from the [CDN](http://cdnjs.com/libraries/p5.js), more info on that [here](http://p5js.org/get-started/#file-setup).
   * [Getting started with p5.js](http://p5js.org/get-started/)
   * [Processing <> p5.js transition](https://github.com/lmccart/p5.js/wiki/Processing-transition)
-  * (OPTIONAL) Since we have servi up and running we can host our p5 sketches that way. However, another option since we are focusing on client-side is to set up a simple server. Here is some about running a [local web server with python or apache](https://github.com/lmccart/p5.js/wiki/Local-server). 
+  * Since we have [servi.js](https://github.com/antiboredom/servi.js) up and running we can host and test our p5 sketches that way. However, another option since we are focusing this week more on client-side is to set up a [local web server with python or apache](https://github.com/lmccart/p5.js/wiki/Local-server). 
 * [FYI: HTML5Canvas without p5.js](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
 * [Shawn's notes for this week](http://itp.nyu.edu/~sve204/commlabnetworkedmedia_fall2014/week2.html)
 * [Robyn's notes](https://github.com/robynitp/networkedmedia/wiki/Week-2-Notes)
