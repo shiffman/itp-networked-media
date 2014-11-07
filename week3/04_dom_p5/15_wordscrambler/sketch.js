@@ -1,24 +1,24 @@
-// Scramble what the user enters into a text field
+// ITP Networked Media, Fall 2014
+// DOM Manipulation
+// https://github.com/shiffman/itp-networked-media
+// Daniel Shiffman
+
+// Let's look an example that messes with user input text
+// A ton more here!  https://github.com/shiffman/Programming-from-A-to-Z-F14
 
 // The scrambled text
 var scrambled = "";
+
+// The user input
 var input;
 
 function setup() {
   noCanvas();
 
-
-  // A form
-  var label = createDiv("Please enter your name: <br/>");
-  label.id("form");
-  input = createInput();
-  input.value("Type something here.");
-  input.parent("form");
-  
+  input = getElement("input");
   // A link that when clicked applies the generate() function
-  var go = createButton("Scramble It!");
+  var go = getElement("button");
   go.mousePressed(generate);
-  go.parent("form");
   
   // An HTML Element for the resulting text
   scrambled = createP("");
@@ -45,11 +45,3 @@ function generate() {
     scrambled.html(scrambledtext);
   }
 }
-
-function noCanvas() {
-  var c = document.getElementById('defaultCanvas');
-  if (c) {
-    c.parentNode.removeChild(c);
-  }
-}
-

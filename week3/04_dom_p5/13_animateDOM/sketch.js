@@ -1,19 +1,30 @@
-// Scramble what the user enters into a text field
+// ITP Networked Media, Fall 2014
+// DOM Manipulation
+// https://github.com/shiffman/itp-networked-media
+// Daniel Shiffman
 
-// Some HTML
+// Let's look at something that resembles a Processing sketch 
+// but animations a DOM element instead
+
+// This is our DOM element
 var words;
 
+// Variables to move it around
 var x;
 var y;
 var xspeed = 5;
 var yspeed = -2;
 
+// Size
 var fsize = 48;
 
 function setup() {
   noCanvas();
-  // Make the HTML
+
+  // Make the elements
   words = createP("Bouncing Shaking Words");
+
+  // Start it in the middle
   x = windowWidth/2;
   y = windowHeight/2;
 
@@ -39,8 +50,6 @@ function draw() {
   if (y > windowHeight || y < 0) {
     yspeed *= -1;
   }
-
-
 }
 
 

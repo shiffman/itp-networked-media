@@ -1,13 +1,15 @@
-// Learning Processing
+// ITP Networked Media, Fall 2014
+// DOM Manipulation
+// https://github.com/shiffman/itp-networked-media
 // Daniel Shiffman
-// http://www.learningprocessing.com
 
-// Example 9-11 ported to p5.js
-// Resizing an array is JS is as easy as "push()"
+// Let's look at a simple sketch that adds some buttons
+// and sliders!
 
-var balls = []; // We start with an empty array
+var balls = [];       // We start with an empty array
 var gravity = 0.1;
 
+// All of the DOM elements we need
 var counter;
 var button;
 var slider;
@@ -16,7 +18,7 @@ var sliderVal;
 function setup() {
   createCanvas(640,360);
   
-  // I'm going to draw some text on top of the canvas!
+  // Dom elements
   counter = createP("");
   counter.style("font-size","16pt;");
   
@@ -25,13 +27,14 @@ function setup() {
   // Attach the button to a function!
   button.mousePressed(newBall);
 
-  // A range
+  // A slider
+  // Min and max values and where to start
   slider = createSlider(10,100,50);
+  // A dom element to show us the value
   sliderVal = createP("");
 
   // Initialize ball index 0
   balls.push(new Ball(50,0,24));
-
 
 }
 
@@ -45,14 +48,9 @@ function draw() {
     balls[i].display();
   }
 
-  // Updating the text!
+  // Updating the DOM elements that show us info:
   counter.html("Total objects: " + balls.length);
-
-
-  fill(255);
   sliderVal.html("Size: " + slider.value());
-
-
 }
 
 function newBall() {
