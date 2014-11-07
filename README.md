@@ -45,29 +45,31 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 * [Assignment 2 (DUE 11/7)](https://github.com/shiffman/itp-networked-media/wiki/Week-2-Homework)
 
 ### Week 3 (11/7): DOM Manipulation
-* Manipulating the Document Object Model with Javascript
-* JavaScript Events
+* [Intro to DOM manipulation and events](https://github.com/lmccart/p5.js/wiki/Intro-to-DOM-manipulation-and-events) - Use JS to manipulate the HTML page and make it react to events (mouse, keyboard, touch, page load). 
+* [Tutorial: p5.dom library](https://github.com/lmccart/p5.js/wiki/Beyond-the-canvas) - You can also use the p5.dom library to handle HTML manipulation and events.
+* [JQuery](http://jquery.com/) is (probably the most) popular JS Library for client-side stuff.  We won't use it much in our examples, but it's work examining and thinking about.
+* [Intro to CSS and layouts](https://github.com/lmccart/p5.js/wiki/Intro-to-HTML-and-CSS#css).  This week might be a good time to start working with external stylesheets.
+* [Assignment 3 (DUE 11/21)](https://github.com/shiffman/itp-networked-media/wiki/Week-3-Homework)
 
-###Week 4 (11/14): Consuming Data
+### No class Friday, 11/14!
+
+### Week 4 (11/21): Consuming Data
 * HTML forms
 * Web services: AJAX and JSON
 * APIs
 
-###Week 5 (11/21): Write your own API
+### Thanksgiving Break
 
+### Week 5 (12/2): Write your own API (Note this new make-up date!)
 * Server-side JavaScript writing basic HTTP servers with Servi and Node.js
 * Data storage
 * Query strings, GET vs. POST
 
-### Thanksgiving Break
-
 ### Week 6 (12/5): Live web
-
 * WebSockets realtime interaction in the browser
 * Arduino?!
 
 ### Week 7 (12/12): Final Projects
-
 * Final project presentations
 
 
