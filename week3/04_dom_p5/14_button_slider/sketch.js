@@ -20,18 +20,18 @@ function setup() {
   
   // Dom elements
   counter = createP("");
-  counter.style("font-size","16pt;");
   
   // A button
-  button = createButton("Add a new object.");
+  button = createButton("Add a new ball.");
   // Attach the button to a function!
   button.mousePressed(newBall);
+  button.position(20,340);
 
   // A slider
   // Min and max values and where to start
   slider = createSlider(10,100,50);
   // A dom element to show us the value
-  sliderVal = createP("");
+  sliderVal = createDiv("");
 
   // Initialize ball index 0
   balls.push(new Ball(50,0,24));
