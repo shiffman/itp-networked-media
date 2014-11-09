@@ -46,9 +46,13 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 
 ### Week 3 (11/7): DOM Manipulation
 * [Intro to DOM manipulation and events](https://github.com/lmccart/p5.js/wiki/Intro-to-DOM-manipulation-and-events) - Use JS to manipulate the HTML page and make it react to events (mouse, keyboard, touch, page load). 
+  * [Reference for all DOM events](https://developer.mozilla.org/en-US/docs/Web/Events)
+  * [DOM manipulation with no libraries examples](https://github.com/shiffman/itp-networked-media/tree/master/week3/02_dom_pure_js)
 * [Tutorial: p5.dom library](https://github.com/lmccart/p5.js/wiki/Beyond-the-canvas) - You can also use the p5.dom library to handle HTML manipulation and events.
-* Events (moments of interaction) and callbacks - we'll look more closely at callbacks again week 4 when we start requesting data from APIs.
+  * [p5.dom.js reference](http://p5js.org/reference/#/libraries/p5.dom)
+  * [p5.dom.js examples](https://github.com/shiffman/itp-networked-media/tree/master/week3/04_dom_p5)
 * [JQuery](http://jquery.com/) is (probably the most) popular JS Library for client-side stuff.  We won't use it much in our examples, but it's work examining and thinking about.
+  * [Quick and dirty hello world DOM manipulation with JQuery](https://github.com/shiffman/itp-networked-media/blob/master/week3/03_dom_jquery/sketch.js)
 * [Intro to CSS and layouts](https://github.com/lmccart/p5.js/wiki/Intro-to-HTML-and-CSS#css).  This week might be a good time to start working with external stylesheets.
 * [Some more notes from Shawn](http://itp.nyu.edu/~sve204/commlabnetworkedmedia_fall2014/week3.html)
 * [Assignment 3 (DUE 11/21)](https://github.com/shiffman/itp-networked-media/wiki/Week-3-Homework)
