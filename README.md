@@ -62,8 +62,8 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 ### Week 4 (11/21): Consuming Data
 * Review of DOM elements from last week
 * Events and callbacks
-* Query strings: get and post requests
-* HTML forms
+* Loading local files
+* Query strings
 * Web services: AJAX and JSON
   * [p5.js notes: Loading-external-files:-AJAX,-XML,-JSON](https://github.com/lmccart/p5.js/wiki/Loading-external-files:-AJAX,-XML,-JSON)
 * APIs
