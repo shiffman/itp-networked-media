@@ -60,9 +60,16 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 ### No class Friday, 11/14!
 
 ### Week 4 (11/21): Consuming Data
+* Review of DOM elements from last week
+* Events and callbacks
+* Query strings: get and post requests
 * HTML forms
 * Web services: AJAX and JSON
+  * [p5.js notes: Loading-external-files:-AJAX,-XML,-JSON](https://github.com/lmccart/p5.js/wiki/Loading-external-files:-AJAX,-XML,-JSON)
 * APIs
+  * [Robyn's notes on AJAX and APIs](https://github.com/robynitp/networkedmedia/wiki/AJAX%2C-JSON%2C-APIs)
+  * [Robyn's Instagram API How To](https://github.com/robynitp/networkedmedia/wiki/Instagram-API-How-to)
+
 
 ### Thanksgiving Break
 
@@ -71,9 +78,8 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 * Data storage
 * Query strings, GET vs. POST
 
-### Week 6 (12/5): Live web
-* WebSockets realtime interaction in the browser
-* Arduino?!
+### Week 6 (12/5): Catchup and Review
+* TBA
 
 ### Week 7 (12/12): Final Projects
 * Final project presentations

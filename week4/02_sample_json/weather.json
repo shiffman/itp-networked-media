@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": -76.61,
+    "lat": 39.29
+  },
+  "sys": {
+    "message": 0.0441,
+    "country": "United States of America",
+    "sunrise": 1396953525,
+    "sunset": 1397000248
+  },
+  "weather": [
+    {
+      "id": 500,
+      "main": "Rain",
+      "description": "light rain",
+      "icon": "10d"
+    }
+  ],
+  "base": "cmc stations",
+  "main": {
+    "temp": 59.99,
+    "humidity": 58,
+    "pressure": 999,
+    "temp_min": 57,
+    "temp_max": 62.6
+  },
+  "wind": {
+    "speed": 3.33,
+    "gust": 7.2,
+    "deg": 269
+  },
+  "rain": {
+    "1h": 0.25
+  },
+  "clouds": {
+    "all": 12
+  },
+  "dt": 1396974326,
+  "id": 4347778,
+  "name": "Baltimore",
+  "cod": 200
+}
