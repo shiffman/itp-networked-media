@@ -61,15 +61,17 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 
 ### Week 4 (11/21): Consuming Data
 * Review of DOM elements from last week
+   * [resizing the window](https://github.com/shiffman/itp-networked-media/blob/master/week4/00_more_dom/01_position_canvas_resize/sketch.js)
 * Events and callbacks
-* Loading local files
+   * [callbacks with binding the context](https://github.com/shiffman/itp-networked-media/blob/master/week4/00_more_dom/05_same_callback_many_eelements/sketch.js)
+* [Loading local files](https://github.com/shiffman/itp-networked-media/tree/master/week4/01_loading_files)
 * Query strings
-* Web services: AJAX and JSON
+* Web services: AJAX, JSON, and APIs
+  * [Simple JSON examples](https://github.com/shiffman/itp-networked-media/tree/master/week4/02_sample_json)
+  * [API examples](https://github.com/shiffman/itp-networked-media/tree/master/week4/03_APIs)
   * [p5.js notes: Loading-external-files:-AJAX,-XML,-JSON](https://github.com/lmccart/p5.js/wiki/Loading-external-files:-AJAX,-XML,-JSON)
-* APIs
   * [Robyn's notes on AJAX and APIs](https://github.com/robynitp/networkedmedia/wiki/AJAX%2C-JSON%2C-APIs)
   * [Robyn's Instagram API How To](https://github.com/robynitp/networkedmedia/wiki/Instagram-API-How-to)
-
 
 ### Thanksgiving Break
 
