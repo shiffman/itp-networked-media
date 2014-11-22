@@ -1,1 +1,0 @@
-For an example of parsing JSON data see http://jsfiddle.net/rover/d6gN5/

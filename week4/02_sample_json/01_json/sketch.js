@@ -9,7 +9,6 @@
 var jsonString;
 var jsonObject;
 
-
 function setup() {
   // An JavaScript object
   var person = {

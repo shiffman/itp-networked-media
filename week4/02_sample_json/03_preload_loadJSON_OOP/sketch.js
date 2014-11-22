@@ -1,5 +1,13 @@
+// ITP Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
+// Daniel Shiffman
+
+// Thanks to Lauren McCarthy
+// https://github.com/lmccart/itp-networked-media
+
 var json;
 
+// Fill an array of objects with the JSON stuff
 var people = [];
 
 function preload() {
@@ -32,16 +40,18 @@ function Person(data) {
   this.x = random(width);
   this.y = random(height);
   for (var prop in data) {
+    // Just in case its some irrelevant property inherited by something else
     if (data.hasOwnProperty(prop)) {
       this[prop] = data[prop];
     }
   }
-}
 
-// and now adding a method
-Person.prototype.display = function() {
-  fill(155, 30, 180, 180);
-  ellipse(this.x, this.y, this.age * 5, this.age * 5);
-  fill(255);
-  text(this.name, this.x, this.y);
-};
+  // and now adding a method
+  // the JSON file itself can't really have methods so we make new objects
+  this.display = function() {
+    fill(155, 30, 180, 180);
+    ellipse(this.x, this.y, this.age * 5, this.age * 5);
+    fill(255);
+    text(this.name, this.x, this.y);    
+  }
+}

@@ -1,6 +1,14 @@
+// ITP Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
+// Daniel Shiffman
+
+// Thanks to Lauren McCarthy
+// https://github.com/lmccart/itp-networked-media
+
 var data;
 
 function preload() {
+  // preload the data
   data = loadJSON("data.json");
 }
 
@@ -11,17 +19,16 @@ function setup() {
   textSize(20);
 }
 
+// Draw based on the data
 function draw() {
   console.log(data);
   background(120, 180, 200);
 
 
-  //
   // You can access JSON values by using a '.' followed by the key
   //
   // data.person1.name = "Morgan"
   // data.person2.name = "Joss"
-  //
 
   // person 1 bubble
   fill(155, 30, 180, 180);
