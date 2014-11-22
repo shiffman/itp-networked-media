@@ -72,6 +72,7 @@ The network is one of our most fundamental mediums for interactivity. It makes p
   * [p5.js notes: Loading-external-files:-AJAX,-XML,-JSON](https://github.com/lmccart/p5.js/wiki/Loading-external-files:-AJAX,-XML,-JSON)
   * [Robyn's notes on AJAX and APIs](https://github.com/robynitp/networkedmedia/wiki/AJAX%2C-JSON%2C-APIs)
   * [Robyn's Instagram API How To](https://github.com/robynitp/networkedmedia/wiki/Instagram-API-How-to)
+* [Assignment 4 (DUE 12/2)](https://github.com/shiffman/itp-networked-media/wiki/Week-4-Homework)
 
 ### Thanksgiving Break
 
