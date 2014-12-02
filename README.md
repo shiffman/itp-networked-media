@@ -78,13 +78,21 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 
 ### Week 5 (12/2): Write your own API (Note this new make-up date!)
 * Server-side JavaScript: writing basic HTTP servers with Servi and Node.js
-  * Hello world server
-  * Serving files
-  * Routes
-  * Query String and GET requests
-  * HTML Forms and POST requests
-  * Data Storage
-  * Serving up data to various clients
+  * [Hello world server](https://github.com/shiffman/itp-networked-media/tree/master/week5/01_hello)
+  * [Storing data in a variable](https://github.com/shiffman/itp-networked-media/tree/master/week5/02_hello_persistence)
+  * [Serving files](https://github.com/shiffman/itp-networked-media/tree/master/week5/03_serve_files)
+  * [Routes](https://github.com/shiffman/itp-networked-media/tree/master/week5/04_routes)
+  * [Routes with Query String](https://github.com/shiffman/itp-networked-media/tree/master/week5/05_routes_params)
+  * ['RESTian' routes](https://github.com/shiffman/itp-networked-media/tree/master/week5/06_routes_params_REST)
+  * [Searching data with a route](https://github.com/shiffman/itp-networked-media/tree/master/week5/07_routes_REST_data)
+  * [Basic database](https://github.com/shiffman/itp-networked-media/tree/master/week5/08_database)
+  * [Adding to database with a route](https://github.com/shiffman/itp-networked-media/tree/master/week5/09_database_add)
+  * [Searching database, forms and GET requests](https://github.com/shiffman/itp-networked-media/tree/master/week5/10_database_search)
+  * [Building your own API](https://github.com/shiffman/itp-networked-media/tree/master/week5/11_database_API)
+    * more on forms
+    * GET vs POST
+    * serving up JSON
+    * requesting data from yourself
 * [Shawn's notes](http://itp.nyu.edu/~sve204/commlabnetworkedmedia_fall2014/week5.html)
 * [Robyn's notes](https://github.com/robynitp/networkedmedia/wiki/Week-5-Notes)
 * [Project Proposals (due 12/5)](https://github.com/shiffman/itp-networked-media/wiki/Final-Project-Proposals)
