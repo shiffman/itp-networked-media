@@ -57,20 +57,18 @@ function setup() {
   button.position(10,60);
 }
 
-function searchIt() {
-  // We will count through the array each time this function is called
-  var count = 0;
-  var grab = function() {
-    years[count].loadData(input.value());
-    count++;
-  };
+function makeRequest(year, wait) {
+  setTimeout(
+    function() {
+      year.loadData(input.value());
+    }, 
+    wait
+  );
+}
 
+function searchIt() {
   for (var i = 0; i < years.length; i++) {
-    years[i].total = 0;
-    // A little delay between each call so that we don't overload the API
-    // We probably should do something where we wait until we get a reply back
-    // before asking again but this is good enough for now
-    setTimeout(grab, i*200);
+    makeRequest(years[i], i*200);
   }
 }
 
