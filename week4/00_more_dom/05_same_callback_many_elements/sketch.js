@@ -8,12 +8,10 @@ function setup() {
   noCanvas();
 
   for (var i = 0; i < 5; i++) {
-    var div = createDiv("Here I am.");
+    var div = createDiv("<a href='#'>Here I am.</a>");
     div.style("font-size","32pt");
 
-    // Using bind to bind the context of an object to a function!?!?!?!?!?
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
-    div.mousePressed(change.bind(div));
+    div.mousePressed(change);
 
     // This is the native JS way
     // div.elt.addEventListener('click',change);
@@ -22,11 +20,9 @@ function setup() {
 }
 
 // This is a callback function
-// It is "called back" whenever the mouse is pressed on
-// the paragraph
+// It is "called back" whenever the mouse is pressed on the elemnt
 function change() {
-  // What's the context??
-  // console.log(this);
+  // The context for this function is automatically bound by p5 the the DOM element
   this.html("There I go.");
 
   // For use with div.elt.addEventListener()
