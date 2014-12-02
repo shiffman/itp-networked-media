@@ -1,6 +1,6 @@
+// ITP Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
 // Daniel Shiffman
-// Programming from A to Z, Fall 2014
-// https://github.com/shiffman/Programming-from-A-to-Z-F14
 
 // Thanks Sam Lavigne and Shawn Van Every
 // https://github.com/antiboredom/servi.js/wiki

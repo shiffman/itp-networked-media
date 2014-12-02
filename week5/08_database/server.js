@@ -1,8 +1,9 @@
+// ITP Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
 // Daniel Shiffman
-// Programming from A to Z, Fall 2014
-// https://github.com/shiffman/Programming-from-A-to-Z-F14
 
-// adapted from https://github.com/robynitp/networkedmedia
+// Adapted from https://github.com/robynitp/networkedmedia
+// and https://github.com/lmccart/itp-networked-media
 
 // Every servi application must have these 2 lines
 var servi = require('servi');
@@ -11,39 +12,44 @@ var app = new servi(true);
 // Set the port (defaults to 3000 if you leave out this line)
 port(3001);
 
+// Set up a database
+// The server will look for a file called 'people.db'
+// If it doesn't exist it will make one.
+var namesDB = useDatabase('people'); 
 
-// set up a database
-// looks for a file called "people.db" or creates one if it doesn't exist
-var namesDB = useDatabase("people"); 
+// Add some people to the db
+namesDB.add({ name: 'Alejandro', age: 19 });
+namesDB.add({ name: 'Mimi',      age: 20 });
+namesDB.add({ name: 'Gregor',    age: 85 });
+namesDB.add({ name: 'Ramie',     age: 9} );
 
-// add some people to the db
-namesDB.add({name:"Alejandro", age:19});
-namesDB.add({name:"Mimi", age:20});
-namesDB.add({name:"Gregor", age:85});
-namesDB.add({name:"Ramie", age:9});
-
-// each of these lines could also be written:
-// var p = {
-//   name: "Alexjandro",
+// Each of these lines could also be written:
+// var person = {
+//   name: 'Alexjandro',
 //   age: 19
 // };
-// namesDB.add(p);
+// namesDB.add(person);
 
 
-// set up the routes
+// Set up the main route
 route('/', showAll);
 
-
-// show all the names
+// Show all the names
 function showAll(request){
+  // This gets all the data
+  // Have to wait for a callback
   namesDB.getAll(gotNames);
-
+  
+  // Now we've got all the data
   function gotNames(names){
-    var namestext = "";
+    // Put together some text
+    var namestext = '';
     for (i =0; i < names.length; i++) {
-        namestext += names[i].name + " "+names[i].age+"<br/>";
+      namestext += names[i].name + ' ' + names[i].age + '<br/>';
     }
-    request.respond( namestext );
+    
+    // Send out the data
+    request.respond(namestext);
   }
   
 }

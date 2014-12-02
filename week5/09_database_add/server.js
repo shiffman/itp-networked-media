@@ -1,8 +1,9 @@
+// ITP Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
 // Daniel Shiffman
-// Programming from A to Z, Fall 2014
-// https://github.com/shiffman/Programming-from-A-to-Z-F14
 
-// adapted from https://github.com/robynitp/networkedmedia
+// Adapted from https://github.com/robynitp/networkedmedia
+// and https://github.com/lmccart/itp-networked-media
 
 // Every servi application must have these 2 lines
 var servi = require('servi');
@@ -11,46 +12,51 @@ var app = new servi(true);
 // Set the port (defaults to 3000 if you leave out this line)
 port(3001);
 
-// set up a database
-// looks for a file called "people.db" or creates one if it doesn't exist
-var namesDB = useDatabase("people"); 
+// Set up a database
+// The server will look for a file called 'people.db'
+// If it doesn't exist it will make one.
+var namesDB = useDatabase('people'); 
 
-
-// set up the routes
+// Set up the main route
 route('/', showAll);
+
+// Show all the names
+function showAll(request){
+  // This gets all the data
+  // Have to wait for a callback
+  namesDB.getAll(gotNames);
+  
+  // Now we've got all the data
+  function gotNames(names){
+    // Put together some text
+    var namestext = '';
+    for (i =0; i < names.length; i++) {
+      namestext += names[i].name + '<br/>';
+    }
+    
+    // Send out the data
+    request.respond(namestext);
+  }
+}
+ 
+// Here will will use a route to add to the database
+// For example: http://123.com/add/Jane
+// The name Jane will be added to the database
+// Notice the flow of events and data:
+// 1. Define a route, '/add/:person', where ':person' is a variable 
+// 2. User visits that URL, as in http://123.com/add/Jane
+// 3. Grab the variable used in place of ':person', using 'request.params.person'. 
+// In this example, 'request.params.person' is equal to 'Jane'
+
 route('/add/:person',addName);
 
-/* 
-    ==== Add a new name to the database ====
-
-  If the URL is http://123.com/add/Jane, then the name "Jane" gets added to the DB
-  The text "Jane" is added in an object with a property called "name", like this:
-  {
-     name: "Jane"
-  }
-  Notice the flow of events and data:
-  1. Define a route, '/add/:person', where ':person' is a variable 
-  2. User visits that URL, as in http://123.com/add/Jane
-  3. Grab the variable used in place of ':person', using 'request.params.person'. 
-     In this example, 'request.params.person' is equal to 'Jane'
-*/
 function addName(request){
+  // Get the name
   var personName = request.params.person;
-  namesDB.add({name:personName});
-  request.respond("Added "+personName);
-}
-
-// show all the names
-function showAll(request){
-  namesDB.getAll(gotNames);
-  function gotNames(names){
-    var namestext = "";
-    for (i =0; i < names.length; i++) {
-        namestext += names[i].name + "<br/>";
-    }
-    request.respond( namestext );
-  }
-  
+  // Add to database
+  namesDB.add({ name: personName } );
+  // Added the 
+  request.respond('Added ' + personName);
 }
 
 start();

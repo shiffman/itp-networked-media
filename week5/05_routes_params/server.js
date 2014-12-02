@@ -20,15 +20,16 @@ route('/thing', doThing);
 // This is the call back for what to do
 // We can get stuff from the query String!
 // http://myserver.com/thing?name=Dan
+// The query could be formatted by an HTML form, we'll get to that later
 function doThing(request) {
-  // Query String
-  var name = request.params['name'];
+  // Query String (parameters from a GET request)
+  var name = request.params.name;
   request.respond("Thanks for doing your thing, " + name);
 
   // This is also valid:
-  // var name = request.params.name;
+  // var name = request.params['name'];
 
-  // For a post it would be
+  // For a POST request it would be
   // var name = request.fields['name'];
 }
 

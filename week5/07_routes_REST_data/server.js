@@ -1,8 +1,9 @@
+// ITP Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
 // Daniel Shiffman
-// Programming from A to Z, Fall 2014
-// https://github.com/shiffman/Programming-from-A-to-Z-F14
 
-// adapted from https://github.com/robynitp/networkedmedia
+// Adapted from https://github.com/robynitp/networkedmedia
+// and https://github.com/lmccart/itp-networked-media
 
 // Every servi application must have these 2 lines
 var servi = require('servi');
@@ -12,17 +13,28 @@ var app = new servi(true);
 port(3001);
 
 // Create an internal variable users to hold some data
+// Later we'll see how this might live in a database
+
+Chester Angus
+Talitha Repka
+Kenyetta Oropeza
+Gayle Ehmann
+Dede Zuehlke
+
 var users = {
-  Joe: {
-    about: "I like cats and kittens.",
+  chester: {
+    fullname: 'Chester Angus',
+    about: 'We are dedicated to helping leverage highly effective solutions for today\'s knowledge-driven eCompanies.',
     age: 19
   },
-  Jane: {
-    about: "I live in Alberta and like to code.",
+  gayle: {
+    fullname: 'Gayle Ehmann',
+    about: 'We are continually evolving, helping to provide web-enabled eBusiness solutions for today\'s Scandinavian virtual companies.',
     age: 30
   },
-  Morgan: {
-    about: "Craft beer and pickles and kale!",
+  dede: {
+    full name: 'Dede Zuehlke',
+    about: 'We are continually evolving, helping to enable integrated eTraining portals for today\'s knowledge-driven market leaders.',
     age: 52
   }    
 };
@@ -36,16 +48,22 @@ function home(request){
   request.serveFile("index.html");
 }
 
+// Requesting a profile
 function profile(request){
+  // What name was requested
   var name = request.params.userid;
+  // Does this name exist?
   if (users.hasOwnProperty(name)) {
+    // If so display the data
+    var fullname = users[name].fullname;
     var about = users[name].about;
     var age = users[name].age;
-    var content = "<h1>" + name + "</h1>";
+    var content = "<h1>" + fullname + "</h1>";
     content += "<p>" + about + "</p>";
     content += "<p>I am " + age + " years old.</p>";
     request.respond(content);
   } else {
+    // If not say we couldn't find it
     request.respond("<p>Could not find the user " + name + ".</p>");
   }
 }
