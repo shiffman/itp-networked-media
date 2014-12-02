@@ -1,11 +1,10 @@
+// ITP Networked Media, Fall 2014
+// https://github.com/shiffman/itp-networked-media
 // Daniel Shiffman
-// Programming from A to Z, Fall 2014
-// https://github.com/shiffman/Programming-from-A-to-Z-F14
 
 // Thanks Sam Lavigne and Shawn Van Every
 // https://github.com/antiboredom/servi.js/wiki
 
-// Now let's store data in a database!!
 
 // Use servi
 var servi = require('servi');
@@ -20,7 +19,7 @@ serveFiles("public");
 
 // Now we are making a database
 // This uses https://github.com/louischatriot/nedb behind the scenes
-// It basically saves your data like JSON
+// It saves your data like JSON
 var names = useDatabase("namesdb");
 
 // A route for saving data
@@ -34,8 +33,8 @@ function saveData(request) {
   // Make an object with a name and number
   // from the query string
   var data = {
-    name: request.params['name'],
-    num: request.params['num']
+    name: request.params.name,
+    num: request.params.num
   };
   
   // Add to database
@@ -69,6 +68,8 @@ function jsonAPI(request) {
   names.getAll(gotData);
 
   function gotData(data) {
+    // Specify the output as JSON
+    request.header('application/json');
     // These second two arguments make it a little prettier to look at
     request.respond(JSON.stringify(data, null, 2));
   }

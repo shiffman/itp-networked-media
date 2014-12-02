@@ -33,6 +33,8 @@ function showAll(request){
     for (i =0; i < names.length; i++) {
       namestext += names[i].name + '<br/>';
     }
+
+    namestext += '<p><a href="add/ITP">add something</a>.</p>';
     
     // Send out the data
     request.respond(namestext);
@@ -56,7 +58,7 @@ function addName(request){
   // Add to database
   namesDB.add({ name: personName } );
   // Added the 
-  request.respond('Added ' + personName);
+  request.respond('Added ' + personName + '<br/><a href="/">back to list</a>');
 }
 
 start();

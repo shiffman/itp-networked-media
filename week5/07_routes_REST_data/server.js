@@ -14,13 +14,6 @@ port(3001);
 
 // Create an internal variable users to hold some data
 // Later we'll see how this might live in a database
-
-Chester Angus
-Talitha Repka
-Kenyetta Oropeza
-Gayle Ehmann
-Dede Zuehlke
-
 var users = {
   chester: {
     fullname: 'Chester Angus',
@@ -33,7 +26,7 @@ var users = {
     age: 30
   },
   dede: {
-    full name: 'Dede Zuehlke',
+    fullname: 'Dede Zuehlke',
     about: 'We are continually evolving, helping to enable integrated eTraining portals for today\'s knowledge-driven market leaders.',
     age: 52
   }    

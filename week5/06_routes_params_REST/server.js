@@ -13,6 +13,13 @@ var app = new servi(true);
 // Set the port
 port(3001);
 
+// Landing page
+route('/', home);
+function home(request) {
+  request.respond('Try this <a href="thing/ITP/5">route</a>.');
+}
+
+
 // Now we are defining a route with parameters
 // The parameters are like variables passed into the request
 route('/thing/:name/:num', doThing);

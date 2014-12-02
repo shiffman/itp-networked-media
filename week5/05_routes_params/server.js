@@ -13,6 +13,12 @@ var app = new servi(true);
 // Set the port
 port(3001);
 
+// Landing page
+route('/', home);
+function home(request) {
+  request.respond('Try this <a href="thing/?name=ITP">route</a>.');
+}
+
 // Here's how we can write code to handle a specific 'route'
 // http://myserver.com/thing
 route('/thing', doThing);
