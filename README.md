@@ -77,9 +77,17 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 ### Thanksgiving Break
 
 ### Week 5 (12/2): Write your own API (Note this new make-up date!)
-* Server-side JavaScript writing basic HTTP servers with Servi and Node.js
-* Data storage
-* Query strings, GET vs. POST
+* Server-side JavaScript: writing basic HTTP servers with Servi and Node.js
+  * Hello world server
+  * Serving files
+  * Routes
+  * Query String and GET requests
+  * HTML Forms and POST requests
+  * Data Storage
+  * Serving up data to various clients
+* [Shawn's notes](http://itp.nyu.edu/~sve204/commlabnetworkedmedia_fall2014/week5.html)
+* [Robyn's notes](https://github.com/robynitp/networkedmedia/wiki/Week-5-Notes)
+* [Project Proposals (due 12/5)](https://github.com/shiffman/itp-networked-media/wiki/Final-Project-Proposals)
 
 ### Week 6 (12/5): Catchup and Review
 * TBA
