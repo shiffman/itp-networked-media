@@ -98,7 +98,21 @@ The network is one of our most fundamental mediums for interactivity. It makes p
 * [Project Proposals (due 12/5)](https://github.com/shiffman/itp-networked-media/wiki/Final-Project-Proposals)
 
 ### Week 6 (12/5): Catchup and Review
-* TBA
+* Bonus topics
+   * D3
+   * Twitter API
+   * Twitter bots
+     * npm Twit
+   * Image and pixels
+   * Image bots
+     * install homebrew
+     * brew cairo
+     * install xquartz
+     * npm install canvas
+   * Users uploading images
+   * Sound
+   * Socket
+   * Touch / mobile
 
 ### Week 7 (12/12): Final Projects
 * Final project presentations
