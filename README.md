@@ -106,9 +106,11 @@ The network is one of our most fundamental mediums for interactivity. It makes p
    * Image and pixels
    * Image bots
      * install homebrew
-     * brew cairo
-     * install xquartz
+     * install [xquartz](http://xquartz.macosforge.org/landing/)
+     * brew install cairo
+     * export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
      * npm install canvas
+
    * Users uploading images
    * Sound
    * Socket
