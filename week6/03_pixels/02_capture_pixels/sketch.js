@@ -21,11 +21,8 @@ function setup() {
   createCanvas(w, h); 
   cam = createCapture(VIDEO);
   cam.hide();
-  //cam.size(w,h);
 
   var container = createDiv('');
-  //container.style('line-height','12px');
-
 
   divs = [];
   for (var j = 0; j < rows; j++) {

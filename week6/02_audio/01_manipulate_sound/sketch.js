@@ -18,7 +18,7 @@ function preload() {
 
 function setup() {
   
-  
+  // Start and stop the sound
   var button = createButton("toggle play");
   button.mousePressed(function() {
     if (song.isPlaying()) {
@@ -28,7 +28,8 @@ function setup() {
     }
   });
   createP('').child(button);
-
+  
+  // Some sliders
   volumeSlider = createSlider(0,200,100);
   speedSlider = createSlider(1,400,100);
 

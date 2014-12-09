@@ -29,9 +29,11 @@ function draw() {
     var y = map(spectrum[i], 0, 255, height, height/2);
     line(i, height, i, y);
   }
+  
 
-  var waveform = fft.waveform();  // analyze the waveform
-  beginShape();
+  // We can also draw a waveform!
+  var waveform = fft.waveform();
+  
   noFill();
   stroke(255);
   for (var i = 0; i < waveform.length; i++){

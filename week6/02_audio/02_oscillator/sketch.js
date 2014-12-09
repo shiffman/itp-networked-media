@@ -16,7 +16,8 @@ var speedSlider;
 function setup() {
   
   osc = new p5.SinOsc();
-
+  
+  // Start and stop the oscillator
   var button = createButton("toggle play");
   button.mousePressed(function() {
     osc.start();

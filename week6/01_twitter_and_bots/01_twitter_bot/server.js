@@ -8,10 +8,10 @@
 // npm install twit
 var Twit = require('twit');
 var T = new Twit({
-  consumer_key:         'ja9A00KdXm4Xz7Cc8NCgte7To', 
-  consumer_secret:      'Szu9nrefnjkaF6FClqIugCGV5WD0YUYjru0wtNvzAhIGr723Ex',
-  access_token:         '2799041194-tl1f5kFOkkaARwsRkDYTSmYu9qjEXvESPGTFP9M',
-  access_token_secret:  'Kp94cdnMH6IFv0AGBthFmNjcPsuFhtFGlTLL94zFVHTzX'
+  consumer_key:         '_', 
+  consumer_secret:      '_',
+  access_token:         '_',
+  access_token_secret:  '_'
 });
 
 
