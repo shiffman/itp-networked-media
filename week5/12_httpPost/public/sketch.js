@@ -6,7 +6,6 @@
 // Some DOM stuff
 var input;
 var numput;
-var results;
 
 // Just a setup
 function setup() {
@@ -15,15 +14,14 @@ function setup() {
   noCanvas();
   
   // like a form but not actually a form
-  input = createInput('type in a name');
-  numput = createInput('00');
+  input = getElement('name');
+  numput = getElement('number');
 
   // Here's our submit button
-  var submit = createA('#','post the data');
+  var submit = getElement('post');
   submit.mousePressed(postIt);  
 
   // To show stuff
-  results = createDiv('');
   
 }
 
@@ -40,13 +38,13 @@ function postIt() {
 // We get the data back as a response
 // This is fancier than we need to be
 function getResponse(res) {
+  // The response comes in as raw text so we have to
+  // convert it to an object
   var data = JSON.parse(res.response);
+
+  createDiv('data saved!');
+
+  // we could make some DIVs or do something
+  console.log(data);
   
-  // Make some divs with the data
-  results.remove();
-  results = createDiv('');
-    for (var i = 0; i < data.length; i++) {
-    var record = createDiv(data[i].name + ',' + data[i].num);
-    record.parent(results);
-  }
 }
