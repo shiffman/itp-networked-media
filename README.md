@@ -93,31 +93,33 @@ The network is one of our most fundamental mediums for interactivity. It makes p
     * GET vs POST
     * serving up JSON
     * requesting data from yourself
+* [Notes on GET vs. POST](https://github.com/shiffman/itp-networked-media/wiki/GET,-POST-with-p5)
 * [Shawn's notes](http://itp.nyu.edu/~sve204/commlabnetworkedmedia_fall2014/week5.html)
 * [Robyn's notes](https://github.com/robynitp/networkedmedia/wiki/Week-5-Notes)
 * [Project Proposals (due 12/5)](https://github.com/shiffman/itp-networked-media/wiki/Final-Project-Proposals)
 
 ### Week 6 (12/5): Catchup and Review
 * Bonus topics
-   * D3
-   * Twitter API
-   * Twitter bots
-     * npm Twit
-   * Image and pixels
-   * Image bots
-     * install homebrew
-     * install [xquartz](http://xquartz.macosforge.org/landing/)
-     * brew install cairo
-     * export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
-     * npm install canvas
-
-   * Users uploading images
-   * Sound
-   * Socket
-   * Touch / mobile
+   * [D3 and p5](https://github.com/shiffman/itp-networked-media/tree/master/week6/00_d3)
+   * [Pixels, capture, and video](https://github.com/shiffman/itp-networked-media/tree/master/week6/03_pixels)
+   * [User file selection](https://github.com/shiffman/itp-networked-media/tree/master/week6/04_user_submitted_files)
+   * [Sound](https://github.com/shiffman/itp-networked-media/tree/master/week6/02_audio)
+   * [Twitter API, bots](https://github.com/shiffman/itp-networked-media/tree/master/week6/01_twitter_and_bots)
+     * requires `npm Twit`
+     * server side image stuff uses [node-canvas](https://github.com/Automattic/node-canvas) which requires:
+       * install [homebrew](http://brew.sh/)
+       * install [xquartz](http://xquartz.macosforge.org/landing/)
+       * `brew install cairo`
+       * `export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig`
+       * `npm install canvas`
+       * [additional install info](https://github.com/Automattic/node-canvas/wiki)
+   * [Socket](https://github.com/shiffman/itp-networked-media/tree/master/week6/05_socket)
+   * [Touch / mobile](https://github.com/shiffman/itp-networked-media/tree/master/week6/06_touch_mobile)
+     * [hammer.js](http://hammerjs.github.io/)
+  * [Present Wrap-up Assignment 12/12](https://github.com/shiffman/itp-networked-media/wiki/Final-Project-Documentation)
 
 ### Week 7 (12/12): Final Projects
-* Final project presentations
+* [Final project presentations](https://github.com/shiffman/itp-networked-media/wiki/Final-Project-Documentation)
 
 
 ## Additional Resources

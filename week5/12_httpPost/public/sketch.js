@@ -38,6 +38,7 @@ function postIt() {
 // We get the data back as a response
 // This is fancier than we need to be
 function getResponse(res) {
+  console.log(res);
   // The response comes in as raw text so we have to
   // convert it to an object
   var data = JSON.parse(res.response);
